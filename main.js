@@ -58,6 +58,21 @@ client.on('message', function (message) {
               break;
           }
           break;
+        case 'bridge':
+          switch (args[2]) {
+            case 'best-winstreak':
+              message.reply(`${args[0]}'s best The-Bridge-Winstreak is ${player.stats.Duels.best_bridge_winstreak}!`);
+              break;
+            case 'wins':
+              message.reply(`${args[0]} has ${player.achievements.duels_bridge_wins} wins in The-Bridge!`);
+              break;
+            case 'goals':
+              message.reply(`${args[0]} has ${player.stats.Duels.goals} goals in The-Bridge!`);
+              break;
+            case 'kills':
+              message.reply(`${args[0]} has ${player.stats.Duels.bridge_kills} kills in The-Bridge!`);
+              break;
+          }
       }
     });
   }

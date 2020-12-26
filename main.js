@@ -54,7 +54,7 @@ client.on('message', function (message) {
               message.reply(`${args[0]} has ${player.achievements.bedwars_bedwars_killer} kills in BedWars!`);
               break;
             case 'final-kills':
-              message.reply(`${args[0]} has ${player.stats.final_kills_bedwars} final-kills in BedWars!`);
+              message.reply(`${args[0]} has ${player.stats.Bedwars.final_kills_bedwars} final-kills in BedWars!`);
               break;
           }
           break;

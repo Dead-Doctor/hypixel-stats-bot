@@ -1,10 +1,10 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const config = require('./config.json');
+// const config = require('./config.json');
 const Hypixel = require('hypixel');
 
 const client = new Discord.Client();
-const hypixelApi = new Hypixel({ key: config.HYPIXEL_API_KEY });
+const hypixelApi = new Hypixel({ key: process.env.HYPIXEL_API_KEY });
 
 const prefix = '/';
 
@@ -64,4 +64,4 @@ client.on('message', function (message) {
   }
 });
 
-client.login(config.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);

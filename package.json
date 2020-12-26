@@ -1,0 +1,21 @@
+{
+  "name": "hypixel-stats-bot",
+  "version": "1.0.0",
+  "description": "discord bot to access hypixel stats",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "hypixel",
+    "stats"
+  ],
+  "author": "DeadDoctor",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "hypixel": "^1.0.3"
+  }
+}

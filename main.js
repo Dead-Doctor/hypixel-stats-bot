@@ -37,7 +37,7 @@ client.on('message', function (message) {
 
       const level = exp < 0 ? 1 : Math.floor(1 + reversePqPrefix + Math.sqrt(reverseConst + (2 / growth) * exp));
 
-      message.reply(`The Level of ${args[0]} is ${level}!`);
+      message.reply(`${args[0]}'s Hypixel level is ${level}!`);
     });
   } else if (command === 'stats') {
     hypixelApi.getPlayerByUsername(args[0], (err, player) => {

@@ -40,6 +40,7 @@ client.on('message', function (message) {
       message.reply(`${args[0]}'s Hypixel level is ${level}!`);
     });
   } else if (command === 'stats') {
+    if (typeof args[0] === 'undefined' || typeof args[1] === 'undefined' || typeof args[2] === 'undefined') return;
     hypixelApi.getPlayerByUsername(args[0], (err, player) => {
       switch (args[1]) {
         case 'bedwars':

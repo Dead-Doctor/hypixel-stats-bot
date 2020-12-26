@@ -8,6 +8,7 @@ const hypixelApi = new Hypixel({ key: config.HYPIXEL_API_KEY });
 
 const prefix = '/';
 
+console.log('running');
 client.on('message', function (message) {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
